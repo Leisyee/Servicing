@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-container img {
+            max-width: 50px;
+            margin-right: 20px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .service {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .service-content h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            width: 40%;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        .right-column {
+            width: 60%;
+            padding: 20px;
+        }
+
+        .images-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .image-wrapper {
+            flex: 1 1 48%;
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .image-wrapper::before {
+            content: attr(data-number);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        img.portrait, img.small {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Updated styling for images */
+        img.banner, img.infographic {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .developer-photo {
+            width: 100%;
+            max-width: 150px; /* You can adjust the size as per your preference */
+            height: auto;
+            border-radius: 50%; /* Optional: Makes the image round */
+        }
+
+        #developers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .developer {
+            text-align: center;
+            flex: 1 1 200px;
+            max-width: 250px;
+        }
+
+        @media (min-width: 768px) {
+            .left-column {
+                width: 40%;
+            }
+            .right-column {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="Company Logo" class="logo">
+            <h1>Computer Services</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="layout.html">Layout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="left-column">
+                <img src="logo.png" alt="Banner" class="banner">
+                <div class="essay">
+                    <p>At Computer Services, we specialize in providing top-notch computer repair services. Our team of experts, led by Dustin Kurby Fuentes and Karl Elcano, is dedicated to ensuring your computer systems run smoothly and efficiently. Whether it's fixing hardware issues, removing malware, or recovering lost data, we have the skills and experience to handle it all.</p>
+                    <p>We are proud students from Sta. Lucia High School, currently in Grade 12 ICT (Information and Communications Technology). Our passion for technology and computer sciences has driven us to create this website as part of our academic project. Through this platform, we aim to offer valuable computer repair and maintenance services to our community, ensuring everyone has access to reliable and professional assistance.</p>
+                    <p>With years of experience in the industry, we understand the importance of having a reliable computer system. That's why we offer a range of services tailored to meet your specific needs. From PC repair and networking to software installation and custom PC builds, we've got you covered.</p>
+                    <p>We take pride in our work and are committed to delivering exceptional service to all our clients. Our dedication to continuous learning and staying updated with the latest technology trends ensures that we can provide the best solutions to any computer-related issues you may encounter.</p>
+                    <p>Trust Computer Services for all your computer repair needs. Contact us today to learn more about our services and how we can help you keep your computer systems in top condition. Thank you for visiting our website and considering us for your computer repair services.</p>
+                </div>
+            </div>
+            <div class="right-column">
+                <img src="3D Layout CofmeShop.png" alt="Infographic" class="infographic">
+                <a href="services.html" class="btn">Learn More</a>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>PC Repair</h3>
+                        <p>Our skilled technicians are equipped to handle all types of PC repair. Whether it's a hardware malfunction, software issue, or general troubleshooting, we've got you covered.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Networking</h3>
+                        <p>We offer networking solutions to ensure your home or office network is running smoothly. From setting up new networks to troubleshooting existing ones, we can help you stay connected.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Software Installation</h3>
+                        <p>Need help installing new software? Our team can install and configure software to ensure it runs efficiently on your computer. We'll handle everything from installation to updates.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Data Recovery</h3>
+                        <p>If you've lost important data, don't panic. Our data recovery services can help retrieve lost or corrupted files from your hard drive, ensuring minimal data loss.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Custom PC Builds</h3>
+                        <p>Looking for a custom-built PC tailored to your specific needs? We offer custom PC building services to create a computer that meets your exact specifications and performance requirements.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Virus and Malware Removal</h3>
+                        <p>Our experts can effectively remove viruses, malware, and spyware from your computer, ensuring it runs smoothly and securely. We'll also provide advice on how to avoid future infections.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Preventive Maintenance</h3>
+                        <p>Regular maintenance can extend the life of your computer. We offer preventive maintenance services to keep your system running at its best, including cleaning, updates, and performance checks.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>IT Consulting</h3>
+                        <p>Need expert advice on your IT infrastructure or upcoming projects? Our IT consulting services provide you with the insights and solutions you need to succeed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="developers">
+            <h2>Meet the Developers</h2>
+            <div class="developer">
+                <img src="Lei.jpg" alt="Lei Aban" class="developer-photo">
+                <div class="developer-info">
+                    <h3>Lei Aban</h3>
+                    <p>Grade 12 ICT student at Sta. Lucia High School.</p>
+                    <p>Passionate about technology and software development, photographer, freelancer.</p>
+                </div>
+            </div>
+            <div class="developer">
+                <img src="Kurt.png" alt="Dustin Kurby Fuentes" class="developer-photo">
+                <div class="developer-info">
+                    <h3>Kurt Macahilas</h3>
+                    <p>Grade 12 ICT student at Sta. Lucia High School.</p>
+                    <p>Enthusiastic about web development and creating innovative solutions.</p>
+                </div>
+            </div>
+            <p>You can reach us at <strong>CofmeShop@gmail.com</strong> or call us at <strong>123-456-789</strong>. We created this website to provide exceptional computer services to our community.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Computer Services. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
